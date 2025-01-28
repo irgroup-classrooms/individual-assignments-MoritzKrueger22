@@ -1,32 +1,32 @@
-# Lab 01 - Markdown Assignment
- 
-## About Me
-[My GitHub Profile](https://github.com/MoritzKrueger22)
- 
-## To Do List for This Semester
-- [ ] Learn more about Markdown
-- [ ] Explore Git and GitHub workflows
-- [ ] Dive deeper into Python programming
-- [ ] Understand data visualization tools
-- [ ] Master Jupyter Notebooks
-- [ ] Work on collaborative coding projects
- 
-## Markdown Syntax Cheat Sheet
- 
-| Syntax        | Description                           | Example                        |
-| ------------- | ------------------------------------- | ------------------------------ |
-| `# Heading`   | Creates a heading                    | `# Heading 1`                  |
-| `**bold**`    | Bold text                            | `**bold text**`                |
-| `*italic*`    | Italic text                          | `*italic text*`                |
-| `[Link](url)` | Creates a hyperlink                  | `[GitHub](https://github.com)` |
-| `` `code` ``  | Inline code                          | `` `print('Hello!')` ``        |
-| `> Quote`     | Blockquote                           | `> This is a quote`            |
-| `- List`      | Unordered list                       | `- Item`                       |
-| `1. List`     | Ordered list                         | `1. Item`                      |
- 
-## Inspiring Quote
-> "The goal is to turn data into information, and information into insight." – Carly Fiorina
- 
-## Code Example
+# Lab 01 - Markdown Task
+
+## About Myself
+[Visit My GitHub Profile](https://github.com/MoritzKrueger22)
+
+## Goals for This Semester
+- [ ] Get better at using Markdown
+- [ ] Learn about Git and GitHub workflows
+- [ ] Improve Python programming skills
+- [ ] Explore tools for data visualization
+- [ ] Become proficient in Jupyter Notebooks
+- [ ] Participate in team coding projects
+
+## Markdown Syntax Reference
+
+| Syntax         | Explanation                          | Example                        |
+| -------------- | ------------------------------------ | ------------------------------ |
+| `# Title`      | Creates a title or heading          | `# Title 1`                    |
+| `**bold**`     | Makes text bold                     | `**bold text**`                |
+| `*italic*`     | Makes text italicized               | `*italic text*`                |
+| `[Link](url)`  | Inserts a hyperlink                 | `[GitHub](https://github.com)` |
+| `` `code` ``   | Highlights inline code              | `` `print('Hello, world!')` `` |
+| `> Quote`      | Adds a blockquote                   | `> This is a blockquote`       |
+| `- Item`       | Creates a bullet point              | `- Point`                      |
+| `1. Item`      | Creates a numbered list             | `1. Entry`                     |
+
+## Motivational Quote
+> "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful." – Albert Schweitzer
+
+## Python Code Snippet
 ```python
-print("Hello World!")
+print("Hello, world!")
