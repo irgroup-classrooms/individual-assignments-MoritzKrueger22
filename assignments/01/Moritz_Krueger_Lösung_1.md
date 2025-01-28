@@ -1,7 +1,7 @@
 # Lab 01 - Markdown Assignment
  
 ## About Me
-[My GitHub Profile](https://github.com/elKranos)
+[My GitHub Profile](https://github.com/MoritzKrueger22)
  
 ## To Do List for This Semester
 - [ ] Learn more about Markdown
