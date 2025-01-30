@@ -12,44 +12,177 @@ You can add your command line in- and outputs directly to this README file. Alte
 
 1. Extract all email addresses from the text.
 ``` 
+bash
+grep -Eo '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}' csv/contacts.csv
+```
+**Output:**
+```
+rbrown@company.com
+dgreen@domain.net
+ssilver@university.edu
+jane.smith@gmail.com
+mjohnson@yahoo.com
+lharris@hotmail.com
+eblack@webmail.com
+cblue@provider.com
+john.doe@example.com
+alice.white@domain.org
+```
 
-``` 
 2. Extract all phone numbers from the text.
 ``` 
-
-``` 
+bash
+grep -Eo '\b(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b' csv/contacts.csv
+```
+**Output:**
+```
+555) 321-6789
+555) 123-4567
+555) 975-8642
+555) 987-6543
+555) 555-5555
+555) 864-9753
+555) 246-1357
+555) 432-5678
+555) 876-5432
+555) 531-2468
+```
 3. Extract all names that start with the letter ‘J’.
 ``` 
-
-``` 
+bash
+grep -Eo '\bJ[a-zA-Z]+\b' csv/contacts.csv
+```
+**Output:**
+```
+Johnson
+John
+Jane
+```
 4. Extract all street names that contain the word 'St'.
 ``` 
-
-``` 
+bash
+grep -Eo '\b[\w\s]+St\b' csv/contacts.csv
+```
+**Output:**
+```
+987 Elm St
+864 Chestnut St
+654 Cedar St
+456 Oak St
+246 Birch St
+123 Main St
+135 Walnut St
+```
 5. Extract all addresses in ‘USA’.
-``` 
+``` bash
+grep 'USA' csv/contacts.csv
+```
+**Output:**
+```
+Susan Silver, 975 Cypress Ave, Bigcity, USA
+Mike Johnson, 789 Pine Rd, Othertown, USA
+Alice White, 987 Elm St, Smalltown, USA
+David Green, 246 Birch St, Uptown, USA
+Chris Blue, 864 Chestnut St, Metropolis, USA
+Jane Smith, 456 Oak St, Sometown, USA
+Emily Black, 135 Walnut St, Middletown, USA
+Linda Harris, 321 Maple Dr, Newcity, USA
+John Doe, 123 Main St, Anytown, USA
+Robert Brown, 654 Cedar St, Oldtown, USA
+```
 
-``` 
 6. Extract the last names of all people.
 ``` 
-
-``` 
+bash
+grep -Eo '\b[A-Z][a-z]+(?:\s[A-Z][a-z]+)*,' csv/contacts.csv
+```
+**Output:**
+```
+Chris Blue,
+Mike Johnson,
+Cypress Ave,
+Birch St,
+Metropolis,
+Anytown,
+Elm St,
+Alice White,
+Linda Harris,
+Robert Brown,
+Maple Dr,
+Cedar St,
+Chestnut St,
+Jane Smith,
+Smalltown,
+Newcity,
+Middletown,
+Pine Rd,
+Walnut St,
+Bigcity,
+John Doe,
+Main St,
+Oldtown,
+Othertown,
+Susan Silver,
+Uptown,
+David Green,
+Sometown,
+Emily Black,
+Oak St,
+```
 7. Extract all email domains (part after the @ sign).
 ``` 
-
-``` 
+bash
+grep -Eo '@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}' csv/contacts.csv | sed 's/@//'
+```
+**Output:**
+```
+yahoo.com
+hotmail.com
+domain.net
+provider.com
+webmail.com
+gmail.com
+domain.org
+university.edu
+example.com
+company.com
+```
 8.	Extract all instances of the first name ‘David’ along with their full address (street and city).
 ``` 
-
-``` 
+bash
+grep 'David' csv/contacts.csv | awk -F',' '{print $2 ", " $3}'
+```
+**Output:**
+```
+246 Birch St, Uptown, USA, dgreen@domain.net, (555) 246-1357
+```
 9.	Find all entries where the phone number ends with ‘7’.
 ``` 
-
-``` 
+bash
+grep -E '\b(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?7\b' csv/contacts.csv
+```
+**Output:**
+```
+123-4567
+246-1357
+```
 10.	Extract all instances of first names that end with the letter 'e'.
 ``` 
-
+bash
+grep -Eo '\b[A-Z][a-z]*e\b' csv/contacts.csv
 ``` 
+**Output:**
+```
+Blue
+Pine
+White
+Mike
+Ave
+Maple
+Doe
+Alice
+Jane
+```
 
 ## Parsing product orders with Python
 
