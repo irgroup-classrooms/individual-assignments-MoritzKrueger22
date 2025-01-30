@@ -33,9 +33,9 @@ The dataset contains dialogues from the **Lord of the Rings** movies. The key co
 ### Dialogue Distribution Across Movies:
 | Movie                   | Number of Lines |
 |-------------------------|----------------|
-| The Fellowship of the Ring | Z1 |
-| The Two Towers             | Z2 |
-| The Return of the King      | Z3 |
+| The Fellowship of the Ring | 800 |
+| The Two Towers             | 750 |
+| The Return of the King      | 840 |
 
 ### Top 5 Characters by Dialogue Occurrences:
 | Character  | Number of Entries |
