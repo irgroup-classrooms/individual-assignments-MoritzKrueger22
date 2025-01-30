@@ -25,10 +25,10 @@ The dataset contains dialogues from the **Lord of the Rings** movies. The key co
 
 ## 3. Data Analysis Results
 ### Total Number of Dialogue Lines:
-- **X** total lines (to be replaced with actual number).
+- **2,390** total lines.
 
 ### Unique Words Used:
-- **Y** unique words (to be replaced with actual count).
+- **6,166** unique words.
 
 ### Dialogue Distribution Across Movies:
 | Movie                   | Number of Lines |
